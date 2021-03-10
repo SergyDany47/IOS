@@ -1,1 +1,1 @@
-Ejercicios de la asignatura "Programacion en IOS"
+Actividades de la asignatura "Programacion en IOS"
