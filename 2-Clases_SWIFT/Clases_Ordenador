@@ -1,0 +1,43 @@
+class MemoriaRAM{
+    var capacidadAlmacenamiento: Int = 0
+    var fabricante: String = ""
+    var RGB: Bool = false
+}
+
+struct Procesador{
+    var velocidadProcesador: Int
+    var numCores: Int
+    var numHilos: Int
+    var fabricante: String
+}
+
+class UnidadDeAlmacenamiento{
+    var capacidadAlmacenamiento: Int = 0
+    var fabricante: String = ""
+    var tipoUnidad: String = ""
+}
+
+struct TarjetaGrafica{
+    var memoriaRam: Int
+    var consumo: Int
+    var cudaCores: Int
+    var velocidad: Int
+}
+
+struct Ordenador{
+    var marca: String
+    var modelo: String
+    var memoriaRAM: MemoriaRAM
+    var procesador: Procesador
+    var unidadAlmacenamiento: UnidadAlmacenamiento
+    var tarjetaGrafica: TarjetaGrafica
+    var precio: Int
+}
+
+var ram = MemoriaRAM()
+var procesador = Procesador(velocidadProcesador: 400, numCores: 8, numHilos: 12, fabricante: "AMD")
+var uAlmacenamiento = UnidadAlmacenamiento()
+var tarGrafica = TarjetaGrafica(memoriaRam: 16, consumo: 200, cudaCores: 4, velocidad: 1260)
+
+
+let acer = Ordenador(marca: "Acer", modelo: "AspireG40", memoriaRAM: ram, procesador: procesador, unidadAlmacenamiento: uAlmacenamiento, tarjetaGrafica: tarGrafica, precio: 2500)
